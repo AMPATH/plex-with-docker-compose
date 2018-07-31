@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+    plex:
+        image: plexinc/pms-docker
+        container_name: plex
+        env_file:
+            - .env
+        environment:
+            - PLEX_CLAIM=${PLEX_CLAIM}
+            - TZ="Africa/Nairobi"
+        restart: unless-stopped
+        volumes:
+            - ./../config:/config
+            - ./../data:/data
+            - ./../transcode:/transcode
+        network_mode: "host"
+
+        

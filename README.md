@@ -7,11 +7,18 @@ This is the skeleton to run your Plex server into your computer.
 NOTE: You must have `docker` and `docker-compose` installed. Follow official
 documentation to install them on your computer.
 
+```
+git clone https://github.com/AMPATH/plex-with-docker-compose plex
 
-git clone https://github.com/jpahullo/plex-with-docker-compose.git plex
+```
 
 ```
 cd plex/docker
+```
+
+```
+cp .env.example .env
+
 ```
 
 ```
@@ -20,10 +27,7 @@ docker-compose pull
 ```
 Visit https://www.plex.tv/claim to obtain claim token
 
-```
-cp .env.example .env
 
-```
 
 replace the PLEX_CLAIM in the above file with the clam from https://www.plex.tv/claim
 

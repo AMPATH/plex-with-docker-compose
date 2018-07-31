@@ -27,7 +27,10 @@ docker-compose pull
 ```
 Visit https://www.plex.tv/claim to obtain claim token
 
+```
+nano .env
 
+```
 
 replace the PLEX_CLAIM in the above file with the clam from https://www.plex.tv/claim
 
